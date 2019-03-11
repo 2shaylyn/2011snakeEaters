@@ -1,22 +1,6 @@
-Steganography: The process of embedding secret information into a larger data structure.
+Project 1 Steganography
 
-Abstract Data Type
+README.md
 
-Get Details about the image
-
-File type, Format detail, Image Size
-
-Read a message to be hidden
-
-Convert the message into binary data
-
-See if the carrier image is large enough to hide the message
-
-If the image is large enough, iterate over all pixels in the image and the message and alter the least-significant bit in each pixel and    record the new pixel value as a new image
-
-Save the new image
-
-Read an image and find a hidden message
-https://hackernoon.com/simple-image-steganography-in-python-18c7b534854f
-https://www.geeksforgeeks.org/image-based-steganography-using-python/
+The data files (image pixels) will start with a line indicating particular features of its image data.  The line will say "Alpha=no" or "Alpha=yes" depending on whether the Alpha values are included.  You can assume that each image has dimensions 64 by 64 pixels; if not, the dimensions will be included in that first line of text as "Dimensions=wxh", where 'w' and 'x' are decimal integers.
 
