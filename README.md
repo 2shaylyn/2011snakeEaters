@@ -6,5 +6,6 @@ The data files (image pixels) will start with a line indicating particular featu
 
 
 
-3.21.2019
+3.21.2019- Bailie 
+
 Has anyone started the process of putting together the packet? If not I can go ahead and start putting it together and we can "fill in the blanks" when as we finish. 
