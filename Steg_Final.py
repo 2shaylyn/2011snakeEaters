@@ -125,7 +125,7 @@ def hide():
         except:
             shell_connect.write('File does not exist, try again.\n','COMMENT')
     ## User write a message to be encripted
-    message_str = input("Write a message to be encripted: ")
+    message_str = input("Write a message to be encrypted: ")
     ## The message which is a String item, has to be written in its binary representation
     message_bin = [bin(ord(k))[2:].zfill(8) for k in message_str]
     ## The next step is to create a new file that will going to have the encripted message
