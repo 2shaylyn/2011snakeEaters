@@ -22,10 +22,12 @@ Read an image and find a hidden message
 https://hackernoon.com/simple-image-steganography-in-python-18c7b534854f
 https://www.geeksforgeeks.org/image-based-steganography-using-python/
 
-Section 2: Data Types 
+Section 2: 
+	Data Types 
 	"to be filled"
 
-Section 3: Data Operations 
+Section 3: 
+	Data Operations 
 
 There are operations present to first encode a message into a given set of pixels for an image and second to decode the encoded message. Within the encoding and decoding operations there are sub operations, detailed below. 
 
@@ -74,3 +76,5 @@ Decoding operations:
 			if the file is not large enough to be encoded, it will be encoded until it reaches the end and a message reporting "Sorry, the file was not big enough to hide the entire message." along with the partial message
 
 Section 4: 
+	Description of an example
+	"to be filled"
