@@ -34,14 +34,14 @@ When the end-user runs the program they are prompted to choose whether to hide(e
 Encoding operations:
 
 	When looking to encode a text file of given hex-digits with a message we define it as a hide function.
-	When the end-user chooses to hide a message they are prompted to input a file they would like to embed the message in. 			i.e. Pixels1.txt
+	When the end-user chooses to hide a message they are prompted to input a file they would like to embed the message in. 	i.e. Pixels1.txt
 		(for the pixel list we were given we were only able to encode 5 characters)
-	Then they are prompted to input the short message. i.e. destroy (this would be too long to fully be encoded into the 				given pixel list) 
+	Then they are prompted to input the short message. i.e. destroy (this would be too long to fully be encoded into the 	given pixel list) 
 		the message, a string item, is written as a binary representation of each character
 		the length of the message is converted to binary
 		the first 2 pixels will have the length of the message
-		the remaining pixels have the message alternating between the red, green, and blue channels of hex-digits with 			the least significant bit being altered 
-			(if the pixel list file is not large enough the characters of the message will be hidden to the end of 					the file and a partial message will be produced)
+		the remaining pixels have the message alternating between the red, green, and blue channels of hex-digits with 	the least significant bit being altered 
+			(if the pixel list file is not large enough the characters of the message will be hidden to the end of 	the file and a partial message will be produced)
 			if the channel 'r' or red the bit will be encrypted in the third(the least significant is the fourth)
 			if the channel 'g' or green the bit will be encrypted in the fifth(the least significant is the sixth) 
 			if the channel 'b' or blue the bit will be encrypted in the seventh(the least significant is the eighth)
@@ -53,23 +53,24 @@ Encoding operations:
 			if the hex-digit is odd it is seen as a '1'
 				the file will only be altered if the message has an even number on the position in and the file 
 				has an odd number in that position and the rest of the bits in the pixel will remain the same
-		if the file being used to encode has more pixel hex-digits than needed then the rest of the pixels will remain 				the same
+		if the file being used to encode has more pixel hex-digits than needed then the rest of the pixels will remain the same
 	A new file is created for the altered pixels to be written to, Pixels1_hidden.txt and this will be needed when running 		the decode portion of the code.
 
 Decoding operations:
 
-	After the end-user has chosen a file and a message to embed in that file, they are again prompted to choose from hide, 			decode, or exit
-		when decode is chosen the end-user is prompted to input the filename to decode the message from.i.e. 						Pixels1_hidden.txt
+	After the end-user has chosen a file and a message to embed in that file, they are again prompted to choose from hide, 	decode, or exit
+		when decode is chosen the end-user is prompted to input the filename to decode the message from.i.e. 		Pixels1_hidden.txt
 			if the input cannot be found an error message will appear
 			if the file can be opened it will be decoded returning the message encoded
-		 		if it is the first two lines, take the least representative in each 'r', 'g' and 'b'and take the 					bits in that locations
-				to find the length of the message convert the number (which is in bytes) to decimal and multiply 					it by 8 so we can know the length of the message in bits
+		 		if it is the first two lines, take the least representative in each 'r', 'g' and 'b'and take the bits in that locations
+				to find the length of the message convert the number (which is in bytes) to decimal and multiply it by 8 so we can know the length of the message in bits
 				if the channel is the red one, the bit to be decoded is the third one
 				if the channel is the green one, the bit to be decoded is the fifth one	
 				if the channel is the blue one, the bit to be decripted is the last one one
-			operation message.split() divides the entire hex values in parts of 8 and for each set of 8 values, it 						takes its contribution
+			operation message.split() divides the entire hex values in parts of 8 and for each set of 8 values, it 	takes its contribution
 				if the hex number is even, the decode understands as a '0'
 				if the hex number is a odd number, the decode understands as a '1'
 					then each of the 8 digits is converted into a character and the message is decoded
-			if the file is not large enough to be encoded, it will be encoded until it reaches the end and a message 				reporting "Sorry, the file was not big enough to hide the entire message." along with the partial 				 message
+			if the file is not large enough to be encoded, it will be encoded until it reaches the end and a message reporting "Sorry, the file was not big enough to hide the entire message." along with the partial message
+
 Section 4: 
