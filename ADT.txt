@@ -76,5 +76,5 @@ Decoding operations:
 			if the file is not large enough to be encoded, it will be encoded until it reaches the end and a message reporting "Sorry, the file was not big enough to hide the entire message." along with the partial message
 
 Section 4: 
-	Description of an example
-	"to be filled"
+	Description of an example:
+	This program allows the user to hide a message in any image file. The number of characters in the message can be no larger than the size of the image file, or an error will occur. To use the program, open Steg_Final.py in Python IDLE and run it. Input the name of the image file that will be used to hide a message in. The program will prompt the user to enter a message to be hidden in the image file, or decode a message hidden in the file.  
