@@ -23,8 +23,14 @@ https://hackernoon.com/simple-image-steganography-in-python-18c7b534854f
 https://www.geeksforgeeks.org/image-based-steganography-using-python/
 
 Section 2: 
-	Data Types 
-	"to be filled"
+	Data Items/Description
+	ADT.TXT			Abstract Data Type Functions and Techniques
+	Pixels1.txt		Original file to embed with data
+	Pixels_hidden.txt	File after data is hidden
+	(File after decode)
+	Steg_Final.py		Python code
+	Steganography.docx	Cover sheet, brief history and explanation
+		
 
 Section 3: 
 	Data Operations 
